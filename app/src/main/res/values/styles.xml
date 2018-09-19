@@ -7,6 +7,16 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
-
+    <!--Problem report theme-->
+    <style name="problem_report_theme" parent="@android:style/Theme.Holo.Light">
+        <item name="android:actionBarStyle">@style/pr_actionbar</item>
+    </style>
+    <style name="pr_actionbar" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@color/app_color</item>
+        <item name="android:titleTextStyle">@style/pr_actionbar_text</item>
+    </style>
+    <style name="pr_actionbar_text" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/actionbar_text_color</item>
+    </style>
 
 </resources>

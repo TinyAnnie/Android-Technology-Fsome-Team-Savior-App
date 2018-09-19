@@ -10,6 +10,7 @@
     <color name="blue_btn">#225f97</color>
     <color name="yellow_btn">#fede8f20</color>
     <color name="text_color">#655</color>
-
+    <color name="problem_report_bg">#f0f0f0</color>
+    <color name="actionbar_text_color">#ffffff</color>
 
 </resources>

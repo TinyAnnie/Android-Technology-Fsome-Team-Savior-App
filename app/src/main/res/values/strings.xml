@@ -16,5 +16,18 @@
     <string name="fn_history">View History</string>
     <string name="fn_detail_acc">Your Account</string>
 
+    <string name="actionbar_pr_name">Problem Report</string>
+    <string name="btn_pr_post">Post Problem</string>
+    <string name="edt_pr_description">Problem Description</string>
+    <string name="prompt_pr_choose_problem">Choose problems</string>
+    <string-array name="spn_pr_list">
+        <item>Run out of fuel</item>
+        <item>Machine broken down</item>
+        <item>Got a flat tyre</item>
+        <item>Got a puncture</item>
+        <item>Other</item>
+        <item>Don/'t know</item>
+    </string-array>
+
 
 </resources>
