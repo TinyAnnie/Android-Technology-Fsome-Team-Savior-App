@@ -11,5 +11,9 @@
     <color name="yellow_btn">#fede8f20</color>
     <color name="text_color">#655</color>
 
+    <!--nvl-->
+    <color name="background_color">#f0f0f0</color>
+    <color name="violet">#0d00b0</color>
+
 
 </resources>
