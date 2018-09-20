@@ -27,10 +27,8 @@ public class MainActivity extends AppCompatActivity {
     Button btnSignIn,btnexit;
     TextView textSignUp;
 
-    //code by NVL
+    
 
-    ListView listView;
-    ArrayList<provider> listDataProvider;
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
@@ -75,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
         textSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent m = new Intent(MainActivity.this, SignUp.class);
+                Intent m = new Intent(MainActivity.this, provider.class);
                 startActivity(m);
             }
         });
@@ -118,40 +116,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void to_NVL(View view) {
-        setContentView(R.layout.activity_list_provider);
-    }
 
-    //code by NVL
 
-    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
-    private void show_listProvider(){
-        listView = (ListView) findViewById(R.id.listViewProvider);
-        createData();
-        providerAdapter adapter = new providerAdapter(this, listDataProvider);
 
-        listView.setAdapter(adapter);
-        adapter.notifyDataSetChanged();
-    }
-
-    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
-    private void createData() {
-        listDataProvider = new ArrayList<provider>();
-        listDataProvider.add(new provider("Honda", "Hòa Khánh", "6.7 km", getDrawable(R.drawable.honda)));
-        listDataProvider.add(new provider("Yamaha", "Sơn Trà", "16.7 km", getDrawable(R.drawable.yamaha)));
-        listDataProvider.add(new provider("Suzuki", "Hải Vân", "2 km", getDrawable(R.drawable.suzuki)));
-        listDataProvider.add(new provider("Toyota", "Điện Biên Phủ", "10 km", getDrawable(R.drawable.toyota)));
-    }
-
-    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
-    public void back_to_listprovider(View view) {
-
-        setContentView(R.layout.activity_list_provider);
-        show_listProvider();
-
-    }
-
-    public void back_to_mainMenu(View view) {
-        setContentView(R.layout.activity_detail_provider);
-    }
 }
