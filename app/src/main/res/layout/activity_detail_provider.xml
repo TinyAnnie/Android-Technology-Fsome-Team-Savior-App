@@ -7,7 +7,7 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="75dp"
+        android:layout_height="@dimen/actionbar_height"
         android:background="@color/app_color"
         android:id="@+id/nav"
         >
@@ -117,8 +117,8 @@
                 android:background="@drawable/custom_btn_message"
                 >
                 <Button
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
+                    android:layout_width="@dimen/btn_width"
+                    android:layout_height="@dimen/btn_height"
                     android:background="@drawable/message"
                     android:layout_centerInParent="true"
                     />
@@ -131,8 +131,8 @@
                 android:background="@drawable/custom_btn_message"
                 >
                 <Button
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
+                    android:layout_width="@dimen/btn_width"
+                    android:layout_height="@dimen/btn_height"
                     android:background="@drawable/phone"
                     android:layout_centerInParent="true"
                     />
@@ -145,8 +145,8 @@
                 android:background="@drawable/custom_btn_message"
                 >
                 <Button
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
+                    android:layout_width="@dimen/btn_width"
+                    android:layout_height="@dimen/btn_height"
                     android:background="@drawable/share"
                     android:layout_centerInParent="true"
                     />
