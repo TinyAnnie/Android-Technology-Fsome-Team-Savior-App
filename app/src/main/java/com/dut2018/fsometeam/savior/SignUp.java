@@ -26,6 +26,7 @@ public class SignUp extends AppCompatActivity {
         ControlButton();
 
     }
+
     private void Anhxa()
     {
 
