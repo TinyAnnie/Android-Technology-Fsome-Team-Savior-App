@@ -1,5 +1,6 @@
 package com.dut2018.fsometeam.savior;
 
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Paint;
@@ -27,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
     Button btnSignIn,btnexit;
     TextView textSignUp;
 
-    
+
 
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
@@ -73,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
         textSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent m = new Intent(MainActivity.this, provider.class);
+                Intent m = new Intent(MainActivity.this, SignUp.class);
                 startActivity(m);
             }
         });
@@ -111,12 +112,14 @@ public class MainActivity extends AppCompatActivity {
         edtPass = (EditText)findViewById(R.id.edt_pass);
         btnSignIn = (Button)findViewById(R.id.btn_sign_in);
         textSignUp = (TextView)findViewById(R.id.btn_sign_up);
-
-
-
     }
 
+    //Code by NVL
 
+    public void to_listprovider(View view) {
+        Intent intent = new Intent(MainActivity.this, MainListProvider.class);
+        startActivity(intent);
+    }
 
 
 }
